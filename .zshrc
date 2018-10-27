@@ -1,8 +1,10 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$PATH:$HOME/.nodebrew/current/bin
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Path to your oh-my-zsh installation.
-#export ZSH="/.oh-my-zsh"
+# export ZSH="/Users/kyohei_toyoda/.oh-my-zsh"
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -166,3 +168,16 @@ zstyle ':completion:*' list-colors ''
 
 # コマンドのスペルを訂正
 setopt correct
+
+# エイリアス
+alias so='source'
+alias vz='vim ~/.zshrc'
+alias la='ls -a'
+alias ll='ls -l'
+
+# git エイリアス
+alias pull='git pull'
+alias push='git push'
+alias st='git status'
+alias stt='git status -uno'
+alias gclone="git clone"
